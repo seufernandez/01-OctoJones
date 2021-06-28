@@ -1,7 +1,7 @@
 import './styles.scss'
 
 import {RepositoryItem} from '../RepositoryItem/index'
-import { FormEvent, useEffect, useState } from 'react'
+import { FormEvent, useState } from 'react'
 
 // https://api.github.com/orgs/ahub-tech/repos
 
@@ -13,20 +13,10 @@ interface Repository {
 }
 
 export function RepositoryList(){
-  
 
   const [ repositories, setRepositories ] = useState<Repository[]>([])
   const [userOwner, setUserOwner] = useState('');
-  
-    // useEffect(()=>{
-    //   // const userOwner = 'billgates'
-    //   fetch(`https://api.github.com/users/${userOwner}/repos`)
-    //   .then(response => response.json())
-    //   .then(data => setRepositories(data))
-    // },[userOwner])
-
-
-    
+      
     
     function GettingInfo(event:FormEvent){
       event.preventDefault();

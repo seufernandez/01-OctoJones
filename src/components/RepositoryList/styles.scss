@@ -1,3 +1,80 @@
+form{
+  display: flex;
+  align-items: center;
+
+
+  button{
+    padding: 8px;
+    border-radius: 0ch;
+    background: #31ee0c9a;
+  }
+}
+
 .repository-list{
-  color: rgb(47, 145, 145);
+  color: whitesmoke;
+  margin: 40px;
+
+
+
+  h1{
+    margin-bottom: 16px;
+  }
+
+  p{
+    margin-bottom: 20px;
+    color: rgba(255, 255, 255, 0.583);
+  }
+
+
+  ul{
+    list-style: none;
+    
+    
+    li{
+      background: rgba(255, 255, 255, 0.111);
+      padding: 20px 28px;
+      border: 1px solid #cacaca64;
+
+      transition: 200ms;
+
+      &:hover{
+        
+        filter: brightness(1.2);
+        
+      }
+
+      // Every li followed by other li will have a margin-top, 
+      // so the first one wont have anything below
+      & + li {
+        margin-top: 44px
+      };
+
+      strong{
+        font-size: larger;
+      }
+
+      p{
+        font-size: 14px;
+        color: rgb(163, 163, 163);
+        margin-top: 8px;
+      }
+
+      a{
+        display: inline-block;
+        margin-top: 12px;
+        text-decoration: none;
+        color: rgb(103, 201, 6);
+        background:rgba(128, 255, 0, 0.09);
+        border:1px solid rgb(103, 201, 6) ;
+        padding: 8px;
+
+        transition: 200ms;
+        &:hover{
+          background:rgba(128, 255, 0, 0.289);
+        }
+  
+      }
+    }
+  }
+
 }
